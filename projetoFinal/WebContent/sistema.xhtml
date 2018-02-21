@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+</h:head>
+
+<h:body>
+  <p:panel header="Logar no sistema">
+    <h:form id="form1">
+      <p:panelGrid columns="2">
+        <h:outputText value="Email" />
+        <p:inputText value="#{mb.usuario.email}" size="20" />
+        <h:outputText value="Senha" />
+        <p:inputText value="#{mb.usuario.senha}" size="20" />
+        <p:commandButton value="Logar"
+                         action="#{mb.logar}"
+                         ajax="false" >
+        </p:commandButton>
+        <p:growl></p:growl>
+      </p:panelGrid>
+    </h:form>
+  </p:panel>
+
+
+  <p:panel header="Gravar no sistema">
+    <h:form id="form2">
+      <p:panelGrid columns="2">
+        <h:outputText value="Nome" />
+        <p:inputText value="#{mb.usuario.nome}" size="20" />
+        <h:outputText value="Email" />
+        <p:inputText value="#{mb.usuario.email}" size="20" />
+        <h:outputText value="Senha" />
+        <h:inputSecret value="#{mb.usuario.senha}" size="20" />
+        <h:outputText value="Sexo" />
+        <p:selectOneMenu value="#{mb.usuario.sexo}" required="true">
+          <f:selectItem itemLabel="Informe sexo" itemValue=""></f:selectItem>
+          <f:selectItem itemLabel="Masculino" itemValue="m"></f:selectItem>
+          <f:selectItem itemLabel="Feminino" itemValue="f"></f:selectItem>
+        </p:selectOneMenu>
+        <p:commandButton value="Gravar"
+                         action="#{mb.gravar}"
+                         ajax="true"
+                         update=":form1, :form2" >
+        </p:commandButton>
+        <p:growl></p:growl>
+      </p:panelGrid>
+    </h:form>
+  </p:panel>
+
+
+</h:body>
+
+
+
+</html>

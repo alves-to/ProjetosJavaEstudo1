@@ -1,0 +1,16 @@
+<div>
+<h2>Gravar Angular</h2>
+<p></p>
+<br/>Nome :<br/>
+<input type="text" id="nomeProduto" name="nomeProduto"
+ ng-model="model.nomeProduto" placeholder="Entre com Nome" />
+ 
+<br/>Preco :<br/>
+<input type="number" step="0.1" id="preco" name="preco"
+ ng-model="model.preco" placeholder="Entre com Preco" />
+
+<br/><br/>
+<button ng-click="gravar()">Gravar dados do Produto</button>
+<br/>
+<b>{{message}}</b>
+</div>

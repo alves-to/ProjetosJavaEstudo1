@@ -1,0 +1,5 @@
+INDEX VERSION 1.130+/media/cpulinux/HD_1Tb/desenvolvimento/projetosJavaEstudo1/.metadata/.plugins/org.eclipse.jdt.core
+179601722.index
+2915881813.index
+1650951668.index
+794807707.index

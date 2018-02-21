@@ -1,0 +1,26 @@
+<div>
+<h2>Consultar com Angular</h2>
+<p/>
+ <table ng-init="listar()" border="1">
+<thead>
+  <tr>
+    <td>idProduto</td>
+    <td>NomeProduto</td>
+    <td>Preco</td>
+  </tr>
+</thead>
+<tbody>
+ <tr ng-repeat="c in lista">
+    <td>{{c.idProduto}}</td>
+    <td>{{c.nomeProduto}}</td>
+    <td>{{c.preco}}</td>
+ </tr> 
+</tbody>
+<tfoot>
+ <tr>
+  <td colspan="3"> Quantidade :: {{lista.length}} </td>
+ </tr>
+</tfoot>
+</table>
+
+</div>

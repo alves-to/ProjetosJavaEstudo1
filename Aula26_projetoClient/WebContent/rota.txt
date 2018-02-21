@@ -1,0 +1,8 @@
+listar = http://localhost:8184/projetoAngular/json/produto/listar
+
+buscarCodigo=
+http://localhost:8184/projetoAngular/json/produto/buscarCodigo/4
+
+
+gravar = 
+http://localhost:8184/projetoAngular/json/produto/gravar/motobola/200
